@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.60" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.24" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/standard_indent"
+            android:layout_marginTop="@dimen/standard_indent"
+            android:layout_marginEnd="@dimen/min_indent"
+            android:layout_marginBottom="@dimen/standard_indent"
+            android:background="#00BCD4"
+            android:padding="@dimen/min_indent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/fifty_dp"
+                android:layout_height="@dimen/fifty_dp"
+                android:layout_gravity="top"
+                android:contentDescription="@string/first_image_description"
+                android:src="@drawable/lol"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/twenty_dp"
+                android:layout_gravity="bottom"
+                android:adjustViewBounds="false"
+                android:contentDescription="@string/second_image_description"
+                android:src="@drawable/long_picture" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/lvFighters"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/min_indent"
+            android:layout_marginTop="@dimen/standard_indent"
+            android:layout_marginEnd="@dimen/min_indent"
+            android:layout_marginBottom="@dimen/standard_indent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline4"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/min_indent"
+            android:layout_marginTop="@dimen/standard_indent"
+            android:layout_marginEnd="@dimen/standard_indent"
+            android:text="@string/label"
+            android:textAlignment="center"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etLabelEditor"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/min_indent"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/standard_indent"
+            android:autofillHints="Write something"
+            android:inputType="textPersonName"
+            android:minHeight="@dimen/fifty_dp"
+            android:text="@string/edittext"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/tvLabel"
+            tools:ignore="LabelFor" />
+
+        <Switch
+            android:id="@+id/colorSwitch"
+            android:layout_width="@dimen/fifty_dp"
+            android:layout_height="@dimen/fifty_dp"
+            android:layout_marginStart="@dimen/min_indent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/etLabelEditor"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/min_indent"
+            android:text="@string/change_label_color"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/colorSwitch"
+            app:layout_constraintStart_toEndOf="@+id/colorSwitch"
+            app:layout_constraintTop_toTopOf="@+id/colorSwitch" />
+
+        <Button
+            android:id="@+id/btnHideList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/min_indent"
+            android:layout_marginTop="8dp"
+            android:text="@string/hide_list"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/colorSwitch" />
+
+        <Button
+            android:id="@+id/btnToast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/min_indent"
+            android:layout_marginTop="@dimen/min_indent"
+            android:text="@string/toast"
+            android:textSize="@dimen/standard_text_size"
+            app:layout_constraintStart_toStartOf="@+id/guideline4"
+            app:layout_constraintTop_toBottomOf="@+id/btnHideList" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBtn"
+        android:layout_width="@dimen/fifty_dp"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="@dimen/standard_indent"
+        android:layout_marginBottom="@dimen/standard_indent"
+        android:backgroundTint="@color/gold"
+        android:contentDescription="@string/fab"
+        tools:ignore="ImageContrastCheck" />
+
+</FrameLayout>
