@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TestKotlin</string>
+    <string name="change_label_color">Change label color</string>
+    <string name="hide_list">HIDE LIST</string>
+    <string name="toast">TOAST</string>
+    <string name="edittext">EditText</string>
+    <string name="first_image_description">First image</string>
+    <string name="second_image_description">Second Image</string>
+    <string name="label">LABEL</string>
+    <string name="task_1">TASK 1</string>
+    <string name="fab">FAB</string>
+    <string name="task_2">TASK 2</string>
+    <string name="task_3">TASK 3</string>
+    <string name="title">TITLE</string>
+    <string name="description">Description</string>
+    <string name="nat">NAT</string>
+    <string name="fib">FIB</string>
+    <string name="col">COL</string>
+    <string name="zero">0</string>
+    <string name="fighter">Fighter</string>
+    <string name="fighter_type">Fighter type</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="plus" translatable="false">+</string>
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Котлин Тест</string>
+    <string name="change_label_color">Изменить цвет надписи</string>
+    <string name="hide_list">СКРЫТЬ СПИСОК</string>
+    <string name="toast">ТОСТ</string>
+    <string name="edittext">Изменить текст</string>
+    <string name="first_image_description">Первое изображение</string>
+    <string name="second_image_description">Второе изображение</string>
+    <string name="label">НАДПИСЬ</string>
+    <string name="task_1">УПРАЖНЕНИЕ 1</string>
+    <string name="fab">ФАБ</string>
+    <string name="task_2">УПРАЖНЕНИЕ 2</string>
+    <string name="task_3">УПРАЖНЕНИЕ 3</string>
+    <string name="title">ЗАГОЛОВОК</string>
+    <string name="description">Описание</string>
+    <string name="nat">НАТ</string>
+    <string name="fib">ФИБ</string>
+    <string name="col">КОЛ</string>
+    <string name="zero">0</string>
+    <string name="fighter">Боец</string>
+    <string name="fighter_type">Тип единоборств</string>
+    <string name="open">Открыть</string>
+    <string name="close">Закрыть</string>
+</resources>

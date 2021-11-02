@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/ivFighter"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginStart="@dimen/standard_indent"
+        android:layout_marginTop="@dimen/standard_indent"
+        android:layout_marginBottom="@dimen/min_indent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/fighter"
+        app:layout_constraintBottom_toTopOf="@+id/tvFighterName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ali" />
+
+    <ImageView
+        android:id="@+id/ivFighterType"
+        android:layout_width="@dimen/fifty_dp"
+        android:layout_height="@dimen/fifty_dp"
+        android:layout_marginTop="@dimen/standard_indent"
+        android:contentDescription="@string/fighter_type"
+        app:layout_constraintStart_toStartOf="@+id/tvAboutFighter"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvAboutFighter"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="@dimen/zero_dp"
+        android:layout_marginStart="@dimen/standard_indent"
+        android:layout_marginTop="@dimen/min_indent"
+        android:layout_marginEnd="@dimen/standard_indent"
+        android:text="@string/description"
+        android:textSize="@dimen/standard_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFighter"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/ivFighter"
+        app:layout_constraintTop_toBottomOf="@+id/ivFighterType" />
+
+    <TextView
+        android:id="@+id/tvFighterName"
+        android:layout_width="@dimen/zero_dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_indent"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="@dimen/standard_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivFighter"
+        app:layout_constraintStart_toStartOf="@+id/ivFighter" />
+
+    <TextView
+        android:id="@+id/tvNaturalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_indent"
+        android:layout_marginEnd="@dimen/standard_indent"
+        android:layout_weight="1"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textSize="@dimen/big_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNaturalInc"
+        app:layout_constraintEnd_toStartOf="@+id/btnNaturalInc"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/btnNaturalInc" />
+
+    <Button
+        android:id="@+id/btnNaturalInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_indent"
+        android:layout_marginEnd="@dimen/standard_indent"
+        android:text="@string/nat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFibonacciNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_indent"
+        android:layout_marginEnd="@dimen/standard_indent"
+        android:layout_weight="1"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textSize="@dimen/big_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFibonacciInc"
+        app:layout_constraintEnd_toStartOf="@+id/btnFibonacciInc"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/btnFibonacciInc" />
+
+    <Button
+        android:id="@+id/btnFibonacciInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_indent"
+        android:text="@string/fib"
+        app:layout_constraintBottom_toTopOf="@+id/btnColInc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNaturalInc" />
+
+    <TextView
+        android:id="@+id/tvColNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/standard_indent"
+        android:layout_marginEnd="@dimen/standard_indent"
+        android:layout_weight="1"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textSize="@dimen/big_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/btnColInc"
+        app:layout_constraintEnd_toStartOf="@+id/btnColInc"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/btnColInc" />
+
+    <Button
+        android:id="@+id/btnColInc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_indent"
+        android:layout_marginBottom="@dimen/standard_indent"
+        android:text="@string/col"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
