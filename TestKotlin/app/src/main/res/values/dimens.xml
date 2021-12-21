@@ -6,7 +6,8 @@
     <dimen name="fifty_dp">50dp</dimen>
     <dimen name="twenty_dp">20dp</dimen>
     <dimen name="standard_text_size">16sp</dimen>
-    <dimen name="large_text_size">48sp</dimen>
+    <dimen name="extra_big_text_size">48sp</dimen>
     <dimen name="big_text_size">34sp</dimen>
     <dimen name="extra_large_text_size">96sp</dimen>
+    <dimen name="large_text_size">72sp</dimen>
 </resources>

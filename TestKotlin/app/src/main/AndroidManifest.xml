@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TestKotlin">
         <activity
+            android:name=".Task2Activity"
+            android:exported="false" />
+        <activity
             android:name=".DetailActivity"
-            android:exported="true">
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".EntryActivity"
             android:exported="true">
@@ -24,8 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

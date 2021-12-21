@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Task2Activity">
+
+    <TextView
+        android:id="@+id/tvThread1Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:text="@string/zero"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvThread2Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_dp"
+        android:text="@string/zero"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvThread1Counter" />
+
+    <Button
+        android:id="@+id/btnRunThreads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty_dp"
+        android:text="@string/run"
+        android:textSize="@dimen/standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvThread2Counter" />
+
+    <Button
+        android:id="@+id/btnStopThreads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/min_indent"
+        android:text="@string/stop"
+        android:textSize="@dimen/standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRunThreads" />
+
+    <Button
+        android:id="@+id/btnResetThreads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/min_indent"
+        android:text="@string/reset"
+        android:textSize="@dimen/standard_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStopThreads" />
+
+    <ImageButton
+        android:id="@+id/iBtnDecreaseThread1Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/min_indent"
+        android:backgroundTint="@color/gold"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvThread1Counter"
+        app:layout_constraintStart_toEndOf="@+id/tvThread1Counter"
+        app:srcCompat="@drawable/ic_down"
+        android:contentDescription="@string/decrease_first_counter_speed" />
+
+    <ImageButton
+        android:id="@+id/iBtnIncreaseThread1Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/min_indent"
+        android:backgroundTint="@color/gold"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/tvThread1Counter"
+        app:layout_constraintTop_toTopOf="@+id/tvThread1Counter"
+        app:srcCompat="@drawable/ic_up"
+        android:contentDescription="@string/increase_first_counter_speed"/>
+
+    <ImageButton
+        android:id="@+id/iBtnIncreaseThread2Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/min_indent"
+        android:backgroundTint="@color/gold"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@+id/tvThread2Counter"
+        app:layout_constraintTop_toTopOf="@+id/tvThread2Counter"
+        app:srcCompat="@drawable/ic_up"
+        android:contentDescription="@string/increase_second_counter_speed" />
+
+    <ImageButton
+        android:id="@+id/iBtnDecreaseThread2Counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/min_indent"
+        android:backgroundTint="@color/gold"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvThread2Counter"
+        app:layout_constraintStart_toEndOf="@+id/tvThread2Counter"
+        app:srcCompat="@drawable/ic_down"
+        android:contentDescription="@string/decrease_second_counter_speed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
