@@ -23,4 +23,11 @@
     <string name="close">Close</string>
     <string name="minus" translatable="false">-</string>
     <string name="plus" translatable="false">+</string>
+    <string name="run">Run</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="increase_first_counter_speed">Increase first counter speed</string>
+    <string name="decrease_first_counter_speed">Decrease first counter speed</string>
+    <string name="decrease_second_counter_speed">Decrease second counter speed</string>
+    <string name="increase_second_counter_speed">Increase second counter speed</string>
 </resources>

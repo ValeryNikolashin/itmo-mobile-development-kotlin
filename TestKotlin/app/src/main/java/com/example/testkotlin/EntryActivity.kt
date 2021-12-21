@@ -57,6 +57,12 @@ class EntryActivity : AppCompatActivity() {
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }
+                R.id.nav_task2 -> {
+                    val message = "Move to Task2Activity."
+                    Log.i("EntryActivity", message)
+                    val intent = Intent(this, Task2Activity::class.java)
+                    startActivity(intent)
+                }
             }
             true
         }

@@ -21,4 +21,11 @@
     <string name="fighter_type">Тип единоборств</string>
     <string name="open">Открыть</string>
     <string name="close">Закрыть</string>
+    <string name="run">Пуск</string>
+    <string name="stop">Стоп</string>
+    <string name="reset">Сбросить</string>
+    <string name="increase_first_counter_speed">Увеличить скорость первого счётчика</string>
+    <string name="decrease_first_counter_speed">Уменьшить скорость первого счётчика</string>
+    <string name="decrease_second_counter_speed">Уменьшить скорость второго счётчика</string>
+    <string name="increase_second_counter_speed">Увеличить скорость второго счётчика</string>
 </resources>
